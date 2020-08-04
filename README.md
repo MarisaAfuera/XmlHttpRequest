@@ -8,30 +8,13 @@ La petición al API se envía mediante XmlHttpRequest de forma asincrona y cuand
   <img src="PostXHR.png" width="350" title="Componentes del ejemplo">  
 </p>
 
-#pagina.html
+# pagina.html
 
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <LINK REL=StyleSheet HREF="estilos.css" TYPE="text/css" MEDIA=screen>
-    <script type="text/javascript" src="ejemploXHR.js"></script>
-    <title>Ejemplo de uso de XMLHttpRequest</title>
-  </head>
-  <body>
-    <h1>Petición XMLhttpRequest</h1>
-    <div class="login-page">
-        <div class="form">          
-          <form class="login-form" >    
-            <input type="text" id="userid" placeholder="username"/>
-            <button onClick="validateUserId(); return false">Validar</button>                      
-            <p class="message" id="userIdMessage"></p>  
-          </form>           
-        </div>
-    </div>    
-  </body>
-</html>
+<p align="center">
+  <img src="XHRPantallaHtml.png" width="350" title="pagina.html">  
+</p>
   
-En onClick del botón Validar utiliza la función validateUserId() que es la que hace una llamada asincrona al servidor. Tiene además un return false para que al hacer click no se refresque la página html completa.
+En onClick del botón Validar utiliza la función validateUserId() que es la que hace una llamada asincrona al servidor. Tiene además un "return false" para que al hacer click no se refresque la página html completa.
 
 # ejemploXHR.js
 var ajaxRequest;  // The variable that makes Ajax possible!
